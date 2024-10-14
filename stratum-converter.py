@@ -1,3 +1,5 @@
+# Forked from Ravencoin Stratum Proxy - Edited for DogeGPU Stratum Proxy
+
 import asyncio
 from copy import deepcopy
 import json
@@ -204,7 +206,7 @@ class StratumSession(RPCSession):
         if len(split) > 1:
             self.name = split[1]
         addr_decoded = base58.b58decode_check(address)
-        if addr_decoded[0] != (111 if self._testnet else 60):
+        if addr_decoded[0] != 38:
             raise RPCError(20, f"Invalid address {address}")
         if not self._state.pub_h160:
             self._state.pub_h160 = addr_decoded[1:]
