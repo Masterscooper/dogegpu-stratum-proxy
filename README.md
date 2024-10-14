@@ -1,4 +1,4 @@
-# ravencoin-stratum-proxy
+# dogegpu-stratum-proxy
 Allows you to mine directly to your own local wallet/node with any mining software that uses the stratum protocol.
 
 If you are a windows user and are not familiar with python, a walk-through and auto installer is avaliable for a (hopefully) easy install. See [here](#windows).
@@ -32,7 +32,7 @@ Mining software will only send a share when it has found a block. No shares for 
 A bat file is avaliable to auto install python and dependencies and generate another bat file to run the stratum.
 1. Ensure your node is configured [as required](#node).
 2. (Re)start your node (the qt wallet works).
-3. Download this repo (https://github.com/kralverde/ravencoin-stratum-proxy/archive/refs/heads/master.zip)
+3. Download this repo (https://github.com/Masterscooper/dogegpu-stratum-proxy/archive/refs/heads/master.zip)
 4. Unzip the downloaded file
 5. Open the unzipped folder
 6. Open the `windows` folder
@@ -44,18 +44,18 @@ A bat file is avaliable to auto install python and dependencies and generate ano
 
 ## Node Requirements:
 
-Requires the following `raven.conf` options:
+Requires the following `dogpu.conf` options:
 ```
 server=1
 rpcuser=my_username
 rpcpassword=my_password
 rpcallowip=127.0.0.1
 ```
-On *nix OS's this file is located at `~/.raven` by default. On windows, this file is located at `%appdata%\roaming\Raven`.
+On *nix OS's this file is located at `~/.dogpu` by default. On windows, this file is located at `%appdata%\roaming\dogpu`.
 
-You may need to create the `raven.conf` file and add those lines if it does not exist.
+You may need to create the `dogpu.conf` file and add those lines if it does not exist.
 
-For testnet you can add `testnet=1` to your `raven.conf`
+For testnet you can add `testnet=1` to your `dogpu.conf`
 
 note:
 - Default Mainnet rpcport = `8766`
@@ -89,8 +89,4 @@ Connect to it with your miner of choise:
 
 <a name="help"/>
 
-## Help:
-@kralverde#0550 is avaliable on the community ravencoin server (https://discord.gg/jn6uhur)
-Donate: 
-  - RVN: RMriWfETGV97hskqH8TvSWVZb9idK6fkU6
-  - BTC: bc1q9vs8ttd6sg8dvhwwqh5g6c5wjm0fwkfmq2lgff
+
